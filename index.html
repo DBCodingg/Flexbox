@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Casita Sedona</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {font-family: Verdana, Arial, sans-serif;
+      background-color: #6D0C96;
+}
+header, h1, wrapper { margin-top: 0; }
+#wrapper {  background-color: #ffffff; 
+	        width: 90%;
+			margin: auto;
+            color: #000000;
+} 
+h1, h2 { color: #6D0C96; }
+header {  
+background-image: url('https://sterlingshelter-animalshelterinc.netdna-ssl.com/wp-content/uploads/2017/04/praying-kitten-twitter-header.jpg');
+background-repeat: no-repeat;
+ background-repeat: no-repeat;
+ background-size: 100%;
+ background-position: center;
+padding: 60px;
+  text-align: center;  
+  
+  
+  font-size: 20px  
+}
+h1 { text-align: right;
+      font-size: 150%;
+	 padding: 5% 0;
+     text-shadow: 3px 3px 3px #F4E8BC;	
+}
+nav, main, aside {  padding: 0 1em; 
+}
+img { width: 100%; 
+      height: auto;
+}
+nav ul { 
+list-style-type: none; 
+         font-size: 1.5em;
+		 padding-left: 0;
+}
+nav a { text-decoration: none;}
+nav a:link { color: #6D0C96; }
+nav a:visited { color: #000000; }
+nav a:hover { color: #FFFFFF; }
+footer { text-align: center;
+         font-size: 80%;
+		 font-style: italic;
+		 color: #003300;
+		 padding: 1.5%;
+}
+
+#demo { display: -webkit-flex;
+display: flex;
+-webkit-flex-direction: row;
+flex-direction: row; }
+
+nav { -webkit-flex: 1; flex: 1; }
+main { -webkit-flex: 7; flex:7; }
+aside { -webkit-flex: 2; flex: 2 }
+
+
+
+@media only screen and (max-width: 1024px) {
+            body { margin: 0; padding: 0; } 
+            #wrapper { width: auto; margin: 0; }
+		    h1 { font-size: 200%; }
+			nav li { padding: 0 0.5em; 
+				     font-size: 1.2em; 	}
+#demo { -webkit-flex-direction: column;
+flex-direction: column; }
+
+nav ul { display: -webkit-flex;
+display: flex;
+-webkit-flex-direction: row;
+flex-direction: row;
+-webkit-justify-content: center;
+justify-content: center; }
+			
+}		
+@media only screen and (max-width: 768px) {
+nav { -webkit-order: 1;
+order: 1; } 
+nav ul { -webkit-flex-wrap: wrap;
+flex-wrap: wrap; }
+         	
+}
+header, main, nav, footer, figure, figcaption { display: block; }
+
+
+.container {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns { 
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #6D0C96;;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+#search-text-input{
+    border-top:thin solid  #e5e5e5;
+    border-right:thin solid #e5e5e5;
+    border-bottom:0;
+    border-left:thin solid  #e5e5e5;
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    float:left;
+    height:17px;
+    margin:.8em 0 0 .5em; 
+    outline:0;
+    padding:.4em 0 .4em .6em; 
+    width:183px; 
+}
+  
+#button-holder{
+    background-color:#f1f1f1;
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    cursor:pointer;
+    float:left;
+    height:27px;
+    margin:11px 0 0 0;
+    text-align:center;
+    width:50px;
+}
+  
+#button-holder img{
+    margin:4px;
+    width:20px; 
+}
+
+ 
+  #box-container { display:flex;
+  flex-direction: column;
+    height: 1000px;
+}
+
+  #box-1{
+    width: 100%;
+    height: 110%;
+ }
+#box-2{ width: 50%;
+        height: 50%;
+}
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1>Adopt</h1>
+	<h1>A Pet</h1>
+	
+  </header>  
+  <div id="demo">
+  <nav>
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+     <li><a href="pets.html">Pets</a></li>
+     <li><a href="specials.html">About</a></li>
+     <li><a href="contact.html">Contact</a></li>
+	</ul> 
+   </nav>
+   <main> 
+
+	<div class="row">
+<div class="six columns"><h2>Main Shelter Adoption Hours</h2><p>Hours Available For Viewing Animals:</p>
+<p>Monday – Friday 1-8</p>
+<p>Saturday, Sunday, and Holidays 10-5</p>
+       Hours For Walk-In Adoption Processing:
+<p>Monday – Friday 1-7</p>
+<p>Saturday, Sunday, and Holidays 10-4
+**Hours are subject to change daily pending volume of walk-in adopters**</p>
+<p> <img src="images/kitten.jpg" Alt="Kittens"/></p></div>
+<div class="six columns"><h2>Everyday Adoption Center Hours</h2><p>Monday – Saturday:  10:00 a.m. – 8:00 p.m.</p>
+<p>Sunday:  11:00 a.m. – 5:00 p.m.</p> <img src="images/adopt.jpg" Alt="Adopt"/></div>
+<div class="six columns"><h2>Petco Location Adoption Hours</h2>	
+<p>Monday – Friday:  6:00 p.m. – 8:00 p.m.</p>
+<p>Saturday and Sunday:  11:00 a.m. – 3:00 p.m</p></div>
+
+<div class="seven columns"><h3>TAKE ME HOME</h3><p>Ready to find a new best friend? Choose an option below and give a homeless pet a forever home.</p></div>
+<div class="seven columns"><a class="button" href="#">Adopt from our sanctuary</a></div>
+<div class="seven columns"><a class="button" href="#">Adopt near you</a></div >
+<div class="seven columns"><a class="button" href="#">Adoption promotion</a></div>
+<div class="seven columns"><a class="button" href="#">Find a pet</a></div>
+
+
+
+<div class="six columns">
+<h5>Sign up for email</h5>
+ <input type='text' placeholder='Email..' id='search-text-input' /> 
+</div>
+
+ 
+<div class="one-third columns"><h2>Flexbox</h2><p> With Flexbox, I noticed that Flex can have its visual order reversed or rearranged. Items can be aligned in your container or between them.  Flexbox makes centering elements are easier.
+One weakness of Flexbox is performance issue. </p></div>
+</div>
+   </main> 
+   <aside>
+   <h2>Fun Facts </h2>
+   <div id="box-container">
+   <div id="box-1"><img src="images/gr.jpg" Alt="Adopt"/><p>Did you know Goldens are often employed as therapy dogs to soothe and calm people. Goldens seem to have reserves of empathy and unconditional love.</p></div>
+ <div id="box-2"><h2>Follow Us on Social Media</h2>
+<p><a href="https://www.facebook.com">Facebook</a></p>
+<p><a href="https://www.instagram.com">Instagram</a></p>
+<p><a href="https://www.twitter.com">Twitter</a></p>
+<div class="one-third columns"><label id="file">Project 6 Progress Bar: 80%</label>
+<progress id="Project6" value="80" max="100"> 80%  </progress></div>
+</div>
+
+
+</div>
+  
+	
+   </aside>
+   </div> <!-- end of flex container -->
+   </div>
+   <footer>Copyright &copy; 2020
+   </footer>
+</body>
+</html>
